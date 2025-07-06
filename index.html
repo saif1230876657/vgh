@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub | تحميل الألعاب والتطبيقات</title>
+  
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary-color: #00ffcc;
+      --secondary-color: #ff4b4b;
+      --text-color: #ffffff;
+      --bg-gradient-start: #1d2b64;
+      --bg-gradient-mid: #3a1c71;
+      --bg-gradient-end: #f83d71;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end));
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: var(--text-color);
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .header {
+      padding: 25px 0;
+    }
+    
+    .header .logo {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+    }
+
+    .hero {
+      margin: 20px auto;
+      max-width: 450px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      border: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Glassmorphism Effect for Content Sections */
+    .content-box {
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 450px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .content h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .content p {
+      font-size: 18px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 450px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      color: var(--text-color);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: none;
+    }
+    
+    .btn i {
+      font-size: 22px;
+    }
+
+    .btn-telegram {
+      background: linear-gradient(90deg, #1e96c8, #29a9eb);
+      box-shadow: 0 4px 20px rgba(41, 169, 235, 0.4);
+    }
+
+    .btn-direct {
+      background: linear-gradient(90deg, #d32f2f, #f44336);
+      box-shadow: 0 4px 20px rgba(244, 67, 54, 0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn:active {
+      transform: translateY(-2px) scale(1.01);
+    }
+
+
+    .footer {
+      margin-top: 60px;
+      padding-bottom: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo">GameHub</div>
+    </header>
+
+    <section class="hero">
+      <!-- صورة جديدة ومجانية للاستخدام -->
+      <img src="https://images.pexels.com/photos/7915228/pexels-photo-7915228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ألعاب وتطبيقات" />
+    </section>
+
+    <section class="content-box">
+      <div class="content">
+        <h1>أكبر مكتبة للألعاب والتطبيقات</h1>
+        <p>اكتشف أفضل الألعاب والتطبيقات، متاحة للتحميل المباشر أو عبر قناتنا على تيليجرام.</p>
+      </div>
+    </section>
+    
+    <section class="buttons">
+      <!-- تم إضافة target="_blank" لفتح الرابط في صفحة جديدة -->
+      <a href="https://t.me/sezxxsz" class="btn btn-telegram" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-telegram"></i>
+        <span>التحميل من تيليجرام</span>
+      </a>
+      <a href="http://www.appcreator24.com/app3614306-g9ilnr" class="btn btn-direct" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-download"></i>
+        <span>التحميل المباشر</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      جميع الحقوق محفوظة © 2025 GameHub
+    </footer>
+  </div>
+
+</body>
+</html>
